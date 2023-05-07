@@ -10,8 +10,8 @@ function Topbar() {
         <div className="flex items-center flex-row justify-between">
           <Logo />
           <div className="absolute left-[181px] top-[26px]">
-            <p className="font-bold text-[24px]">
-              Poke<span className="text-[#39BADF]">book</span>
+            <p className="font-bold font-Clash text-[24px]">
+              Poké<span className="text-[#39BADF]">book</span>
             </p>
           </div>
 

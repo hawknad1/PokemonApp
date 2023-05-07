@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .paginationStyle {
+    @apply cursor-pointer w-10 h-10 bg-[#E1E1E1] flex items-center justify-center rounded-lg;
+  }
+
+  .pagination-numbers {
+    @apply cursor-pointer w-10 h-10 bg-[#E1E1E1] flex items-center justify-center rounded-lg font-Clash text-lg font-medium;
+  }
+}

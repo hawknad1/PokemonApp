@@ -11,7 +11,7 @@ function SearchBar() {
         <input
           type="text"
           placeholder="Enter pokemon name"
-          className="outline-none text-[#7B7B7B]"
+          className="outline-none font-General font-normal text-lg w-[360px] text-[#7B7B7B]"
         />
       </div>
     </div>
