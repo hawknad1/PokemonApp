@@ -6,6 +6,11 @@ const useColor = () => {
   const [themeYellow, setThemeYellow] = useState("");
   const [color, setColor] = useState(false);
   const [themeColor, setThemeColor] = useState("");
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShowModal = () => {
+    setShowModal(true);
+  };
 
   const handleColor = (color) => {
     setColor(true);
@@ -39,6 +44,8 @@ const useColor = () => {
     handleThemeYellow,
     handleColor,
     themeColor,
+    handleShowModal,
+    showModal,
   };
 };
 

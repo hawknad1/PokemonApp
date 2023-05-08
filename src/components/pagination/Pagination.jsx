@@ -41,15 +41,15 @@ function Pagination() {
         </div>
       </div>
       {showModal && (
-        <div className="absolute w-[101px] h-24 left-[1220px] top-[906px] bg-[#FFFFFF] rounded-lg shadow-sm ">
+        <div className="absolute flex justify-center w-[101px] h-24 left-[1220px] top-[906px] bg-[#FFFFFF] rounded-lg shadow-sm ">
           <div className="">
             <div className="hover:bg-[#F3F3F3] w-[94px] h-8 rounded-md flex justify-center items-center cursor-pointer ">
               <p className="text-lg font-Clash font-medium">12</p>
             </div>
-            <div>
+            <div className="hover:bg-[#F3F3F3] w-[94px] h-8 rounded-md flex justify-center items-center cursor-pointer">
               <p className="text-lg font-Clash font-medium">16</p>
             </div>
-            <div>
+            <div className="hover:bg-[#F3F3F3] w-[94px] h-8 rounded-md flex justify-center items-center cursor-pointer">
               <p className="text-lg font-Clash font-medium">24</p>
             </div>
           </div>

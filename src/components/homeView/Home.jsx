@@ -1,12 +1,23 @@
 import { BrowserRouter as Router, useNavigate } from "react-router-dom";
 
-import React from "react";
+import React, { useState } from "react";
 import Logo from "./Logo";
 import SearchBar from "./SearchBar";
 import Name from "./Name";
+import axios from "axios";
 
 function Home() {
   const navigate = useNavigate();
+  // const [data, setData] = useState([]);
+  // useEffect(() => {
+  //   axios
+  //     .get("https://pokeapi.co/api/v2/pokemon/")
+  //     .then((res) => {
+  //       setData(res.data.results);
+  //     })
+  //     .catch((err) => console.log(err));
+  // }, []);
+
   return (
     <div className="relative w-[375px] h-[667px] md:w-[768px] md:h-[1024px] lg:w-[1024px] lg:h-[600px] xl:w-[1440px] xl:h-[1024px]  ">
       <Logo />

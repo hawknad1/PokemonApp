@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 import { AiFillEye } from "react-icons/ai";
 import SideModal from "../side modal/SideModal";
-import About from "../modals/About";
-import useColor from "../../useColor";
 
 function PokemonView() {
-  const [isHovering, setIsHovering] = useState(false);
-  const [showThemeModal, setShowThemeModal] = useState(false);
-  const { color, themeBlue, themeYellow, themeRed, themeColor } = useColor();
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <>
-      <div className="flex justify-center items-center cursor-pointer">
+      <div
+        onClick={() => setShowModal(true)}
+        className="flex justify-center items-center cursor-pointer"
+      >
         <div
           className={`absolute bottom-[13px] py-3 px-5 bg-[#39BADF] w-[268px] h-[46px] rounded-[14px]`}
         >
@@ -27,6 +26,9 @@ function PokemonView() {
           </div>
         </div>
       </div>
+      {showModal && (
+        <SideModal open={showModal} onClose={() => setShowModal(false)} />
+      )}
     </>
   );
 }

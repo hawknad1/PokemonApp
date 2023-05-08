@@ -5,13 +5,17 @@ import PokemondCardList from "./components/listView/ListView";
 import SideModal from "./components/side modal/SideModal";
 import Topbar from "./components/topbar/Topbar";
 import ListView from "./components/listView/ListView";
-import { createContext } from "react";
+import { createContext, useEffect, useState } from "react";
+import axios from "axios";
 
 export const ThemeContext = createContext(null);
+export const ModalContext = createContext(null);
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
-    <ThemeContext.Provider>
+    <ModalContext.Provider value={{ showModal, setShowModal }}>
       <div id="blue">
         <Router>
           <Routes>
@@ -20,7 +24,7 @@ function App() {
           </Routes>
         </Router>
       </div>
-    </ThemeContext.Provider>
+    </ModalContext.Provider>
   );
 }
 

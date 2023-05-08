@@ -4,7 +4,6 @@ import useColor from "../../useColor";
 
 function ThemeButton() {
   const [showThemeModal, setShowThemeModal] = useState(false);
-  const { color, themeBlue, themeYellow, themeRed, themeColor } = useColor();
 
   return (
     <>
