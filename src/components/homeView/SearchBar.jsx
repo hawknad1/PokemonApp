@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { AiOutlineSearch } from "react-icons/ai";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { useNavigate } from "react-router-dom";
 

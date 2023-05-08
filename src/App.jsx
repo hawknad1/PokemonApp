@@ -1,12 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./components/homeView/Home";
-import PokemondCardList from "./components/listView/ListView";
-import SideModal from "./components/side modal/SideModal";
-import Topbar from "./components/topbar/Topbar";
+
 import ListView from "./components/listView/ListView";
 import { createContext, useEffect, useState } from "react";
-import axios from "axios";
 
 export const ThemeContext = createContext(null);
 export const ModalContext = createContext(null);
@@ -29,10 +26,3 @@ function App() {
 }
 
 export default App;
-
-// <div className="relative bg-[#F6F6F6] h-[1024px] md:w-full xl:w-[1441px]">
-//       <Topbar />
-
-//       <PokemondCardList />
-//       {/* <SideModal /> */}
-//     </div>
